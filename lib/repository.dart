@@ -53,7 +53,7 @@ class Repository {
 
   static Future<List<WhatsappStory>> getWhatsappStories() async {
     final uri =
-        "https://raw.githubusercontent.com/blackmann/storyexample/master/lib/data/whatsapp.json";
+        "https://raw.githubusercontent.com/slobulike/storyexample/master/lib/data/whatsapp.json";
     final response = await get(Uri.parse(uri));
 
     final data = jsonDecode(utf8.decode(response.bodyBytes))['data'];
