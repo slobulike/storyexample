@@ -73,7 +73,7 @@ class Repository {
 
   static Future<Gnews> getNews() async {
     final uri =
-        "https://raw.githubusercontent.com/blackmann/storyexample/master/lib/data/gnews.json";
+        "https://raw.githubusercontent.com/slobulike/storyexample/master/lib/data/gnews.json";
     final response = await get(Uri.parse(uri));
 
     // use utf8.decode to make emojis work
